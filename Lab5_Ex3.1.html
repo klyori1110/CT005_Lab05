@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Khám phá năm lợi ích của công nghệ số trong học tập qua infographic và video YouTube.">
+  <meta name="referrer" content="origin">
+  <title>Lợi ích của công nghệ số trong học tập</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: #123e78;
+      background: #eafaff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background: linear-gradient(145deg, #e9fbff, #f7fbff 52%, #e9f2ff);
+    }
+
+    main {
+      width: min(100%, 960px);
+      margin: 0 auto;
+    }
+
+    .page-header {
+      margin: 0 0 24px;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      margin: 0 0 8px;
+      color: #0754ae;
+      font-size: clamp(1.5rem, 5vw, 2.25rem);
+    }
+
+    .description {
+      max-width: 640px;
+      margin: 0 auto;
+      color: #315b82;
+      line-height: 1.6;
+    }
+
+    .panel {
+      overflow: hidden;
+      margin-bottom: 24px;
+      border: 1px solid #c9e8f4;
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 12px 36px rgb(25 89 143 / 10%);
+    }
+
+    .infographic {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .video-section {
+      padding: 24px;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      color: #0754ae;
+      font-size: clamp(1.2rem, 4vw, 1.6rem);
+    }
+
+    .video-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-radius: 8px;
+      background: #102e51;
+    }
+
+    .video-frame iframe {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .video-note {
+      margin: 14px 0 0;
+      color: #315b82;
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+
+    .video-note a {
+      color: #0754ae;
+      font-weight: 600;
+    }
+
+    .copyright {
+      padding: 4px 8px 16px;
+      color: #526b82;
+      font-size: 0.85rem;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 16px 12px;
+      }
+
+      .video-section {
+        padding: 18px 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="page-header">
+      <h1>Lợi ích của công nghệ số trong học tập</h1>
+      <p class="description">Cùng khám phá cách công nghệ số mở rộng cơ hội học tập, kết nối tri thức và giúp mỗi người phát triển kỹ năng cho tương lai.</p>
+    </header>
+
+    <section class="panel" aria-label="Infographic về công nghệ số trong học tập">
+      <img
+        class="infographic"
+        src="Lab05_Ex2.1.png"
+        alt="Lợi ích của công nghệ số trong học tập: mở rộng cơ hội học tập, học tập linh hoạt, tăng tương tác, cá nhân hóa việc học và phát triển kỹ năng số."
+      >
+    </section>
+
+    <section class="panel video-section" aria-labelledby="video-title">
+      <h2 id="video-title">Video YouTube</h2>
+      <div class="video-frame">
+        <iframe
+          src="https://www.youtube.com/embed/GCVKuIFeZGc?rel=0"
+          title="Video YouTube về công nghệ số trong học tập"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          referrerpolicy="origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <p class="video-note" id="file-notice" hidden>Trang đang được mở trực tiếp dưới dạng tệp. Để YouTube xác minh nguồn và phát video, hãy mở trang qua máy chủ web (HTTP/HTTPS). Nếu trình phát vẫn không hoạt động, <a href="https://youtu.be/GCVKuIFeZGc" target="_blank" rel="noopener noreferrer">xem video trên YouTube</a>.</p>
+    </section>
+
+    <footer class="copyright">Bản quyền infographic thuộc về tác giả hoặc đơn vị sở hữu; video thuộc về chủ sở hữu nội dung trên YouTube.</footer>
+  </main>
+  <script>
+    if (window.location.protocol === "file:") {
+      document.getElementById("file-notice").hidden = false;
+    }
+  </script>
+</body>
+</html>
