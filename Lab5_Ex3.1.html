@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Khám phá năm lợi ích của công nghệ số trong học tập qua infographic và video YouTube.">
+  <meta name="description" content="Hồ sơ cá nhân của Lê Ngọc Kim Lợi và các sản phẩm học tập thuộc lớp học phần CT005.">
   <meta name="referrer" content="origin">
-  <title>Lợi ích của công nghệ số trong học tập</title>
+  <title>Hồ sơ cá nhân | Lê Ngọc Kim Lợi</title>
   <style>
     :root {
       color-scheme: light;
@@ -29,31 +29,129 @@
       margin: 0 auto;
     }
 
-    .page-header {
+    .site-heading {
       margin: 0 0 24px;
-      text-align: center;
+      padding-bottom: 16px;
+      border-bottom: 3px solid #168b84;
+      color: #0754ae;
+      font-size: 2.5rem;
+      line-height: 1.15;
     }
 
-    .page-header h1 {
+    .profile {
+      margin-bottom: 32px;
+      padding: 28px;
+      border-left: 5px solid #168b84;
+      border-radius: 8px;
+      background: #fff;
+      box-shadow: 0 12px 36px rgb(25 89 143 / 10%);
+    }
+
+    .profile h2 {
       margin: 0 0 8px;
       color: #0754ae;
-      font-size: clamp(1.5rem, 5vw, 2.25rem);
+      font-size: clamp(1.6rem, 5vw, 2.25rem);
+    }
+
+    .profile-intro {
+      margin: 0 0 22px;
+      color: #315b82;
+      line-height: 1.6;
+    }
+
+    .student-details {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin: 0;
+    }
+
+    .student-details div {
+      padding-top: 12px;
+      border-top: 1px solid #d9e8ef;
+    }
+
+    .student-details dt {
+      margin-bottom: 4px;
+      color: #526b82;
+      font-size: 0.85rem;
+    }
+
+    .student-details dd {
+      margin: 0;
+      color: #123e78;
+      font-weight: 650;
+    }
+
+    .products-heading {
+      margin: 0 0 18px;
+      color: #0754ae;
+      font-size: clamp(1.3rem, 4vw, 1.7rem);
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .page-header {
+      margin: 0 0 18px;
+    }
+
+    .page-header h2 {
+      margin: 0 0 6px;
+      color: #0754ae;
+      font-size: 1.25rem;
     }
 
     .description {
-      max-width: 640px;
-      margin: 0 auto;
+      margin: 0;
       color: #315b82;
       line-height: 1.6;
     }
 
     .panel {
       overflow: hidden;
-      margin-bottom: 24px;
       border: 1px solid #c9e8f4;
-      border-radius: 12px;
+      border-radius: 8px;
       background: #fff;
       box-shadow: 0 12px 36px rgb(25 89 143 / 10%);
+    }
+
+    .product-content {
+      padding: 22px;
+    }
+
+    .product-content h3,
+    .video-section h3 {
+      margin: 0 0 14px;
+      color: #0754ae;
+      font-size: 1.15rem;
+    }
+
+    .pdf-link {
+      display: inline-flex;
+      min-height: 44px;
+      align-items: center;
+      padding: 0 16px;
+      border-radius: 4px;
+      background: #168b84;
+      color: #fff;
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    .pdf-link:hover,
+    .pdf-link:focus-visible {
+      background: #106c67;
+    }
+
+    .product-note {
+      margin: 12px 0 0;
+      color: #526b82;
+      font-size: 0.9rem;
+      line-height: 1.5;
     }
 
     .infographic {
@@ -63,7 +161,7 @@
     }
 
     .video-section {
-      padding: 24px;
+      padding: 22px;
     }
 
     h2 {
@@ -102,7 +200,7 @@
     }
 
     .copyright {
-      padding: 4px 8px 16px;
+      padding: 24px 8px 8px;
       color: #526b82;
       font-size: 0.85rem;
       line-height: 1.5;
@@ -114,7 +212,24 @@
         padding: 16px 12px;
       }
 
+      .profile {
+        padding: 22px 18px;
+      }
+
+      .site-heading {
+        font-size: 2rem;
+      }
+
+      .student-details,
+      .product-grid {
+        grid-template-columns: 1fr;
+      }
+
       .video-section {
+        padding: 18px 14px;
+      }
+
+      .product-content {
         padding: 18px 14px;
       }
     }
@@ -122,31 +237,64 @@
 </head>
 <body>
   <main>
-    <header class="page-header">
-      <h1>Lợi ích của công nghệ số trong học tập</h1>
-      <p class="description">Cùng khám phá cách công nghệ số mở rộng cơ hội học tập, kết nối tri thức và giúp mỗi người phát triển kỹ năng cho tương lai.</p>
-    </header>
-
-    <section class="panel" aria-label="Infographic về công nghệ số trong học tập">
-      <img
-        class="infographic"
-        src="Lab05_Ex2.1.png"
-        alt="Lợi ích của công nghệ số trong học tập: mở rộng cơ hội học tập, học tập linh hoạt, tăng tương tác, cá nhân hóa việc học và phát triển kỹ năng số."
-      >
+    <h1 class="site-heading">Hồ sơ cá nhân</h1>
+    <section class="profile" aria-labelledby="profile-title">
+      <h2 id="profile-title">Lê Ngọc Kim Lợi</h2>
+      <p class="profile-intro">Tôi là sinh viên lớp học phần CT005, quan tâm đến việc ứng dụng công nghệ số để học tập, kết nối tri thức và phát triển kỹ năng cho tương lai.</p>
+      <dl class="student-details">
+        <div>
+          <dt>Họ và tên</dt>
+          <dd>Lê Ngọc Kim Lợi</dd>
+        </div>
+        <div>
+          <dt>MSSV</dt>
+          <dd>B2605355</dd>
+        </div>
+        <div>
+          <dt>Lớp học phần</dt>
+          <dd>CT005</dd>
+        </div>
+      </dl>
     </section>
 
-    <section class="panel video-section" aria-labelledby="video-title">
-      <h2 id="video-title">Video YouTube</h2>
-      <div class="video-frame">
-        <iframe
-          src="https://www.youtube.com/embed/GCVKuIFeZGc?rel=0"
-          title="Video YouTube về công nghệ số trong học tập"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          referrerpolicy="origin"
-          allowfullscreen
-        ></iframe>
+    <section aria-labelledby="products-title">
+      <h2 class="products-heading" id="products-title">Sản phẩm đã thực hiện</h2>
+      <div class="product-grid">
+        <article class="panel product-content">
+          <h3>Tài liệu PDF</h3>
+          <a class="pdf-link" href="Lab05_Ex1.2.pdf" target="_blank" rel="noopener">Mở sản phẩm PDF</a>
+          <p class="product-note">Tệp: Lab05_Ex1.2.pdf</p>
+        </article>
+
+        <article class="panel">
+          <div class="product-content">
+            <h3>Infographic PNG</h3>
+            <header class="page-header">
+              <h2>Lợi ích của công nghệ số trong học tập</h2>
+              <p class="description">Cùng khám phá cách công nghệ số mở rộng cơ hội học tập, kết nối tri thức và giúp mỗi người phát triển kỹ năng cho tương lai.</p>
+            </header>
+          </div>
+          <img
+            class="infographic"
+            src="Lab05_Ex2.1.png"
+            alt="Lợi ích của công nghệ số trong học tập: mở rộng cơ hội học tập, học tập linh hoạt, tăng tương tác, cá nhân hóa việc học và phát triển kỹ năng số."
+          >
+        </article>
+
+        <section class="panel video-section" aria-labelledby="video-title">
+          <h3 id="video-title">Video YouTube</h3>
+          <div class="video-frame">
+            <iframe
+              src="https://www.youtube.com/embed/GCVKuIFeZGc?rel=0"
+              title="Video YouTube về công nghệ số trong học tập"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              referrerpolicy="origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="video-note" id="file-notice" hidden>Trang đang được mở trực tiếp dưới dạng tệp. Để YouTube xác minh nguồn và phát video, hãy mở trang qua máy chủ web (HTTP/HTTPS). Nếu trình phát vẫn không hoạt động, <a href="https://youtu.be/GCVKuIFeZGc" target="_blank" rel="noopener noreferrer">xem video trên YouTube</a>.</p>
+        </section>
       </div>
-      <p class="video-note" id="file-notice" hidden>Trang đang được mở trực tiếp dưới dạng tệp. Để YouTube xác minh nguồn và phát video, hãy mở trang qua máy chủ web (HTTP/HTTPS). Nếu trình phát vẫn không hoạt động, <a href="https://youtu.be/GCVKuIFeZGc" target="_blank" rel="noopener noreferrer">xem video trên YouTube</a>.</p>
     </section>
 
     <footer class="copyright">Bản quyền infographic thuộc về tác giả hoặc đơn vị sở hữu; video thuộc về chủ sở hữu nội dung trên YouTube.</footer>
